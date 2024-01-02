@@ -24,7 +24,7 @@ public class MyGdxGame extends ApplicationAdapter {
 		img = new Texture("t1.jpg");
 		music= Gdx.audio.newMusic(Gdx.files.internal("郭顶-凄美地.mp3"));
 		camera=new OrthographicCamera();
-		camera.setToOrtho(false, 30, 50);
+		camera.setToOrtho(false, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 		bucket = new Rectangle();
 		bucket.x = 800 / 2 - 64 / 2;
 		bucket.y = 20;

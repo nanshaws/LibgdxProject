@@ -37,6 +37,15 @@ public class TextureAltaScreen extends BaseScreen {
             isRight=true;
             isLeft=false;
             TextureRegion currentFrame=runR.getKeyFrame(elapsed_time,true);
+            if (playx>=540) {
+                playx=540;
+            }else if (playy>=380){
+                playy=380;
+            }else if (playx<=100){
+                playx=100;
+            }else if (playy<=100){
+                playy=100;
+            }
             playx+=4;
             batch.draw(currentFrame,playx,playy,currentFrame.getRegionWidth(),currentFrame.getRegionHeight());
         }
@@ -47,6 +56,15 @@ public class TextureAltaScreen extends BaseScreen {
             isRight=false;
             isLeft=true;
             TextureRegion currentFrame=runL.getKeyFrame(elapsed_time,true);
+            if (playx>=540) {
+                playx=540;
+            }else if (playy>=380){
+                playy=380;
+            }else if (playx<=100){
+                playx=100;
+            }else if (playy<=100){
+                playy=100;
+            }
             playx-=4;
             batch.draw(currentFrame,playx,playy,currentFrame.getRegionWidth(),currentFrame.getRegionHeight());
         }
@@ -54,6 +72,15 @@ public class TextureAltaScreen extends BaseScreen {
             isLeft=false;
             isRight=true;
             TextureRegion currentFrame=runR.getKeyFrame(elapsed_time,true);
+            if (playx>=540) {
+                playx=540;
+            }else if (playy>=380){
+                playy=380;
+            }else if (playx<=100){
+                playx=100;
+            }else if (playy<=100){
+                playy=100;
+            }
             playx+=4;
             playy+=4;
             batch.draw(currentFrame,playx,playy,currentFrame.getRegionWidth(),currentFrame.getRegionHeight());
@@ -62,6 +89,15 @@ public class TextureAltaScreen extends BaseScreen {
             isLeft=true;
             isRight=false;
             TextureRegion currentFrame=runL.getKeyFrame(elapsed_time,true);
+            if (playx>=540) {
+                playx=540;
+            }else if (playy>=380){
+                playy=380;
+            }else if (playx<=100){
+                playx=100;
+            }else if (playy<=100){
+                playy=100;
+            }
             playx-=4;
             playy+=4;
             batch.draw(currentFrame,playx,playy,currentFrame.getRegionWidth(),currentFrame.getRegionHeight());
@@ -73,6 +109,15 @@ public class TextureAltaScreen extends BaseScreen {
             }else if (isLeft){
                 currentFrame =runL.getKeyFrame(elapsed_time,true);
             }
+            if (playx>=540) {
+                playx=540;
+            }else if (playy>=380){
+                playy=380;
+            }else if (playx<=100){
+                playx=100;
+            }else if (playy<=100){
+                playy=100;
+            }
             playy-=4;
             batch.draw(currentFrame,playx,playy,currentFrame.getRegionWidth(),currentFrame.getRegionHeight());
         }
@@ -80,10 +125,28 @@ public class TextureAltaScreen extends BaseScreen {
 
             if (isRight){
                 TextureRegion  currentFrame=runR.getKeyFrame(elapsed_time,true);
+                if (playx>=540) {
+                    playx=540;
+                }else if (playy>=380){
+                    playy=380;
+                }else if (playx<=100){
+                    playx=100;
+                }else if (playy<=100){
+                    playy=100;
+                }
                 playy+=4;
                 batch.draw(currentFrame,playx,playy,currentFrame.getRegionWidth(),currentFrame.getRegionHeight());
             }else if (isLeft){
                 TextureRegion  currentFrame=runL.getKeyFrame(elapsed_time,true);
+                if (playx>=540) {
+                    playx=540;
+                }else if (playy>=380){
+                    playy=380;
+                }else if (playx<=100){
+                    playx=100;
+                }else if (playy<=100){
+                    playy=100;
+                }
                 playy+=4;
                 batch.draw(currentFrame,playx,playy,currentFrame.getRegionWidth(),currentFrame.getRegionHeight());
             }
